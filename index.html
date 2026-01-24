@@ -1,22 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <!-- Essential Meta Tags -->
   <base href="/">
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Ganesh Gaire - Personal Portfolio">
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Ganesh Gaire Portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Ganesh Gaire - Full Stack Developer | Portfolio</title>
+  <meta name="title" content="Ganesh Gaire - Full Stack Developer | Portfolio">
+  <meta name="description" content="Ganesh Gaire is a skilled Full Stack Developer specializing in Flutter, Web Development, and Mobile Applications. View my portfolio, projects, and contact information.">
+  <meta name="keywords" content="Ganesh Gaire, Full Stack Developer, Flutter Developer, Web Developer, Mobile App Developer, Portfolio, Nepal Developer, Software Engineer">
+  <meta name="author" content="Ganesh Gaire">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://gaireganesh.com.np/">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gaireganesh.com.np/">
+  <meta property="og:title" content="Ganesh Gaire - Full Stack Developer | Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Ganesh Gaire - Full Stack Developer specializing in Flutter, Web, and Mobile Development.">
+  <meta property="og:image" content="https://gaireganesh.com.np/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Ganesh Gaire Portfolio">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://gaireganesh.com.np/">
+  <meta name="twitter:title" content="Ganesh Gaire - Full Stack Developer | Portfolio">
+  <meta name="twitter:description" content="Explore the portfolio of Ganesh Gaire - Full Stack Developer specializing in Flutter, Web, and Mobile Development.">
+  <meta name="twitter:image" content="https://gaireganesh.com.np/twitter-image.jpg">
+  <meta name="twitter:creator" content="@ganeshgaire">
+  
+  <!-- iOS Meta Tags & Icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ganesh Gaire">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/Icon-152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/Icon-120.png">
+  
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <title>Ganesh Gaire - Portfolio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2196F3">
+  <meta name="msapplication-TileColor" content="#2196F3">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  
+  <!-- Preconnect to External Resources (Performance Optimization) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" as="script" href="flutter_bootstrap.js">
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ganesh Gaire",
+    "url": "https://gaireganesh.com.np",
+    "image": "https://gaireganesh.com.np/profile-image.jpg",
+    "jobTitle": "Full Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "sameAs": [
+      "https://github.com/ganeshgaire",
+      "https://linkedin.com/in/ganeshgaire",
+      "https://twitter.com/ganeshgaire"
+    ],
+    "description": "Full Stack Developer specializing in Flutter, Web Development, and Mobile Applications",
+    "knowsAbout": ["Flutter", "Web Development", "Mobile Development", "JavaScript", "Dart", "React", "Node.js"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Your University Name"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NP",
+      "addressLocality": "Kathmandu"
+    }
+  }
+  </script>
+  
+  <!-- Google Analytics (Replace with your tracking ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <!-- Loading Screen CSS (Inline for fast initial render) -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    
+    /* Loading Screen */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    
+    #loading-screen.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+      margin-top: 20px;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    /* No JavaScript Fallback */
+    noscript {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #f44336;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      z-index: 10000;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <!-- No JavaScript Warning -->
+  <noscript>
+    <strong>⚠️ JavaScript is required to view this website. Please enable JavaScript in your browser settings.</strong>
+  </noscript>
+  
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text">Loading Portfolio...</p>
+  </div>
+  
+  <!-- Main App Container -->
+  <div id="app-container"></div>
+  
+  <!-- Flutter Bootstrap Script -->
+  <script src="flutter_bootstrap.js" async defer></script>
+  
+  <!-- Remove Loading Screen After Page Load -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.classList.add('hidden');
+          setTimeout(function() {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }
+      }, 500);
+    });
+    
+    // Fallback: Remove loading screen after 5 seconds if load event doesn't fire
+    setTimeout(function() {
+      var loadingScreen = document.getElementById('loading-screen');
+      if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+        loadingScreen.classList.add('hidden');
+      }
+    }, 5000);
+  </script>
+  
+  <!-- Service Worker Registration (for PWA) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/flutter_service_worker.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
 </body>
 </html>
-
